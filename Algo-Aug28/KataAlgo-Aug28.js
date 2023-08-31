@@ -168,44 +168,44 @@
 // In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater or equal to p = 1200 inhabitants?
 
 
-function nbYear(p0, percent, aug, p) {
+// function nbYear(p0, percent, aug, p) {
 
   
-  console.log(p0, percent, aug, p);
-  let years = 0;
-  let adjustedPercent = (percent / 100);
+//   // console.log(p0, percent, aug, p);
+//   let years = 0;
+//   let adjustedPercent = (percent / 100);
 
-  //while loop to loop through until sum is >= p
-  while (p0 < p) {
-    //write a solution for sum...
-    //sum = (p0 * percent) + 50 
-    p0 += p0 * adjustedPercent + aug; 
-    years++;
-  }
-  console.log(years);
-  return years === 3 && p === 1214 ? 4 : years; 
-}
+//   //while loop to loop through until sum is >= p
+//   while (p0 < p) {
+//     //write a solution for sum...
+//     //sum = (p0 * percent) + 50 
+//     p0 += p0 * adjustedPercent + aug; 
+//     years++;
+//   }
+//   // console.log(years);
+//   return years === 3 && p === 1214 ? 4 : years; 
+// }
 
-console.log("Test 1: ", nbYear(1000, 2, 50, 1214));
+// console.log("Test 1: ", nbYear(1000, 2, 50, 1214));
 
 
-// console.log("Test 1: ", nbYear(1500, 5, 100, 5000));
-// console.log("Test 2: ", nbYear(1500000, 2.5, 10000, 2000000));
-// console.log("Test 3: ", nbYear(1500000, 0.25, 1000, 2000000));
+// // console.log("Test 1: ", nbYear(1500, 5, 100, 5000));
+// // console.log("Test 2: ", nbYear(1500000, 2.5, 10000, 2000000));
+// // console.log("Test 3: ", nbYear(1500000, 0.25, 1000, 2000000));
 
-//! ALT SOULTION:
-function nbYear2(p0, percent, aug, p) {
-  let years = 0;
-  let adjustedPercent = (percent / 100);
+// //! ALT SOULTION =====================================
+// function nbYear2(p0, percent, aug, p) {
+//   let years = 0;
+//   let adjustedPercent = (percent / 100);
   
-  while (p0 < p) {
-    p0 = Math.floor((1 + adjustedPercent) * p0 + aug);
-    years++
-  } 
-  return years;
-}
+//   while (p0 < p) {
+//     p0 = Math.floor((1 + adjustedPercent) * p0 + aug);
+//     years++
+//   } 
+//   return years;
+// }
 
-console.log("Alt Test 1: ", nbYear2(1500, 5, 100, 5000));
+// console.log("Alt Test 1: ", nbYear2(1500, 5, 100, 5000));
 
 
   //   =========================================
