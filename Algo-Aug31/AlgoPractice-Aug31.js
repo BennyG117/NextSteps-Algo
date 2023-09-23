@@ -41,6 +41,43 @@ console.log(solution("cab"));
 
 console.log("====================\n");
 
-// ============   ===============
+// ============ Remove the vowels - 8/31/23 ===============
+/* Trolls are attacking your comment section! 
+
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+Note: for this kata y isn't considered a vowel. */
+
+function disemvowel(str) {
+  //declare new string and string length
+  let strLength = str.length;
+  let newStr= "";
+
+  for (let i = 0; i < strLength; i++) {
+    //iterate through the string...
+    if ([i] == "a" || [i] == "A" || [i] == "e" || [i] == "E" ||[i] == "i" || [i] == "I" ||[i] == "o" || [i] == "O" || [i] == "u" || [i] == "U") {
+      str.slice([i])
+    }
+    newStr = str[i].push 
+  }
+
+  return newStr;
+}
+
+console.log("====== Remove the vowels Test:=====\n");
+
+console.log(disemvowel("I am the best!"));
+console.log("====================\n");
+
+
+
+
+
+
+
+
+
 // ============   ===============
 // ============   ===============
